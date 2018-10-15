@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultR", "ConsultR\ConsultR.csproj", "{154C5DE0-CE48-4172-83FE-10A69581D59A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FC353496-747B-4D50-9713-824CD6319BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultR.Publication.Tests", "ConsultR.Publication.Tests\ConsultR.Publication.Tests.csproj", "{29C3788D-3AB5-469C-984F-7EC7DD6C8001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{154C5DE0-CE48-4172-83FE-10A69581D59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{154C5DE0-CE48-4172-83FE-10A69581D59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{154C5DE0-CE48-4172-83FE-10A69581D59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C3788D-3AB5-469C-984F-7EC7DD6C8001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C3788D-3AB5-469C-984F-7EC7DD6C8001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C3788D-3AB5-469C-984F-7EC7DD6C8001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C3788D-3AB5-469C-984F-7EC7DD6C8001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29C3788D-3AB5-469C-984F-7EC7DD6C8001} = {FC353496-747B-4D50-9713-824CD6319BF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A011BB7C-1242-4BCB-9DC8-208F520B610C}
