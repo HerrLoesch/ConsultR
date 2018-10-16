@@ -1,4 +1,4 @@
-﻿namespace ConsultR.Data
+﻿namespace ConsultR.Publications.Data
 {
     public class Publication
     {

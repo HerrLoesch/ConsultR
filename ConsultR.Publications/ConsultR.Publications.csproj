@@ -49,6 +49,8 @@
     <Compile Include="Interfaces\IPublicationManager.cs" />
     <Compile Include="Logic\PublicationManager.cs" />
     <Compile Include="PublicationsModule.cs" />
+    <Compile Include="ViewModels\IPublicationOverviewViewModel.cs" />
+    <Compile Include="ViewModels\PublicationOverViewDesignViewModel.cs" />
     <Compile Include="ViewModels\PublicationOverviewViewModel.cs" />
     <Compile Include="Views\PublicationOverviewView.xaml.cs">
       <DependentUpon>PublicationOverviewView.xaml</DependentUpon>

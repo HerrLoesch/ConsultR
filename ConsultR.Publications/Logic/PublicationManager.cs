@@ -1,9 +1,9 @@
-﻿namespace ConsultR.Logic
+﻿namespace ConsultR.Publications.Logic
 {
     using System.Collections.Generic;
 
-    using ConsultR.Data;
-    using ConsultR.Interfaces;
+    using ConsultR.Publications.Data;
+    using ConsultR.Publications.Interfaces;
 
     public class PublicationManager : IPublicationManager
     {

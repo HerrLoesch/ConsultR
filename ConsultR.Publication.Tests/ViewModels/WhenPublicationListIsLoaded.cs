@@ -3,9 +3,9 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using ConsultR.Data;
-    using ConsultR.Interfaces;
-    using ConsultR.ViewModels;
+    using ConsultR.Publications.Data;
+    using ConsultR.Publications.Interfaces;
+    using ConsultR.Publications.ViewModels;
 
     using DynamicSpecs.NUnit;
 

@@ -2,10 +2,7 @@
 {
     using System.Windows;
 
-    using ConsultR.Interfaces;
-    using ConsultR.Logic;
     using ConsultR.Publications;
-    using ConsultR.Views;
 
     using Prism.Modularity;
     using Prism.Regions;

@@ -1,14 +1,14 @@
-﻿namespace ConsultR.ViewModels
+﻿namespace ConsultR.Publications.ViewModels
 {
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Linq;
     using System.Runtime.CompilerServices;
 
-    using ConsultR.Data;
-    using ConsultR.Interfaces;
+    using ConsultR.Publications.Data;
+    using ConsultR.Publications.Interfaces;
 
-    public class PublicationOverviewViewModel : INotifyPropertyChanged
+    public class PublicationOverviewViewModel : INotifyPropertyChanged, IPublicationOverviewViewModel
     {
         private IPublicationManager publicationManager;
 

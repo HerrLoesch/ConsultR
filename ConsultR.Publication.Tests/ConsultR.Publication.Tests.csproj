@@ -80,6 +80,10 @@
     <Compile Include="ViewModels\WhenPublicationListIsLoaded.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsultR.Publications\ConsultR.Publications.csproj">
+      <Project>{A02590EC-EAB2-41B2-9736-27AA5F17E63E}</Project>
+      <Name>ConsultR.Publications</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ConsultR\ConsultR.csproj">
       <Project>{154C5DE0-CE48-4172-83FE-10A69581D59A}</Project>
       <Name>ConsultR</Name>

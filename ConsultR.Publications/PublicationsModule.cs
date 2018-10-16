@@ -1,8 +1,8 @@
 ﻿namespace ConsultR.Publications
 {
-    using ConsultR.Interfaces;
-    using ConsultR.Logic;
-    using ConsultR.Views;
+    using ConsultR.Publications.Interfaces;
+    using ConsultR.Publications.Logic;
+    using ConsultR.Publications.Views;
 
     using Prism.Ioc;
     using Prism.Modularity;

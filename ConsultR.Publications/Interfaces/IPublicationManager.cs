@@ -1,8 +1,8 @@
-﻿namespace ConsultR.Interfaces
+﻿namespace ConsultR.Publications.Interfaces
 {
     using System.Collections.Generic;
 
-    using ConsultR.Data;
+    using ConsultR.Publications.Data;
 
     public interface IPublicationManager
     {
