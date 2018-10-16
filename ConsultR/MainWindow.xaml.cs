@@ -26,11 +26,5 @@ namespace ConsultR
         {
             InitializeComponent();
         }
-
-        public MainWindow(PublicationOverviewView publication)
-        {
-            this.InitializeComponent();
-            this.MainRegion.Content = publication;
-        }
     }
 }

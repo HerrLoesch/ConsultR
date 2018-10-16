@@ -4,7 +4,9 @@
 
     using ConsultR.Interfaces;
     using ConsultR.Logic;
+    using ConsultR.Views;
 
+    using Prism.Regions;
     using Prism.Unity;
 
     using Unity;
@@ -30,6 +32,9 @@
             Application.Current.MainWindow = shell;
 
             shell.Show();
+
+            var regionManager = this.Container.Resolve<IRegionManager>();
+            regionManager.RegisterViewWithRegion("MainRegion", typeof(PublicationOverviewView));
         }
     }
 }

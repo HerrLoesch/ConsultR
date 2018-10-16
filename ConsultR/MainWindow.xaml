@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConsultR"
+        xmlns:prism="clr-namespace:Prism.Regions;assembly=Prism.WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <ContentControl x:Name="MainRegion">
+    <ContentControl prism:RegionManager.RegionName="MainRegion">
         
     </ContentControl>
 </Window>
