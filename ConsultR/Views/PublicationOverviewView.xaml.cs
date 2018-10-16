@@ -13,24 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ConsultR
+namespace ConsultR.Views
 {
-    using ConsultR.Views;
+    using ConsultR.ViewModels;
 
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PublicationOverviewView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PublicationOverviewView : UserControl
     {
-        public MainWindow()
+        public PublicationOverviewView()
         {
             InitializeComponent();
         }
 
-        public MainWindow(PublicationOverviewView publication)
+        public PublicationOverviewView(PublicationOverviewViewModel viewModel)
         {
-            this.InitializeComponent();
-            this.MainRegion.Content = publication;
+            InitializeComponent();
+            this.DataContext = viewModel;
+
         }
     }
 }

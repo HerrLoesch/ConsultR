@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ConsultR"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <ContentControl x:Name="MainRegion">
         
-    </Grid>
+    </ContentControl>
 </Window>
