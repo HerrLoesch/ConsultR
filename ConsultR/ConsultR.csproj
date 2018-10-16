@@ -77,13 +77,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Bootstraper.cs" />
-    <Compile Include="Data\Publication.cs" />
-    <Compile Include="Interfaces\IPublicationManager.cs" />
-    <Compile Include="Logic\PublicationManager.cs" />
-    <Compile Include="ViewModels\PublicationOverviewViewModel.cs" />
-    <Compile Include="Views\PublicationOverviewView.xaml.cs">
-      <DependentUpon>PublicationOverviewView.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,10 +89,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\PublicationOverviewView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,6 +117,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ConsultR.Publications\ConsultR.Publications.csproj">
+      <Project>{A02590EC-EAB2-41B2-9736-27AA5F17E63E}</Project>
+      <Name>ConsultR.Publications</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

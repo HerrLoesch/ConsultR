@@ -4,8 +4,10 @@
 
     using ConsultR.Interfaces;
     using ConsultR.Logic;
+    using ConsultR.Publications;
     using ConsultR.Views;
 
+    using Prism.Modularity;
     using Prism.Regions;
     using Prism.Unity;
 
@@ -16,8 +18,6 @@
         protected override void ConfigureContainer()
         {
             base.ConfigureContainer();
-
-            this.Container.RegisterType<IPublicationManager, PublicationManager>();
         }
 
         protected override DependencyObject CreateShell()
@@ -26,15 +26,22 @@
             return shell;
         }
 
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
+        }
+
+        protected override void ConfigureModuleCatalog()
+        {
+            this.ModuleCatalog.AddModule(new ModuleInfo(typeof(PublicationsModule)));
+        }
+
         protected override void InitializeShell()
         {
             var shell = (MainWindow)this.Shell;
             Application.Current.MainWindow = shell;
 
             shell.Show();
-
-            var regionManager = this.Container.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("MainRegion", typeof(PublicationOverviewView));
         }
     }
 }
